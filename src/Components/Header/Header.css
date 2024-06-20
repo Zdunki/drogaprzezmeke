@@ -1,0 +1,10 @@
+.Header-AppBar {
+    background-color: darkblue;
+    background-image: linear-gradient(
+        60deg,
+        darkblue 0%,
+        blue 50%,
+        lightblue 90%
+    );
+    padding: 12px;
+}

@@ -1,28 +1,15 @@
-import logo from "./logo.svg";
+import { ThemeProvider } from "@emotion/react";
 import "./App.css";
-import Header from "./Header.js";
+import Header from "./Components/Header/Header.js";
+import { theme } from "./Themes/theme.js";
 
-function App() {
+export default function App() {
+  //const [recepies, setRecepies] = useState([]);
   return (
     <div className="App">
       <Header />
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <p>Hello Darkness my old friend...</p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <ThemeProvider theme={theme}></ThemeProvider>
     </div>
   );
 }
-
-export default App;
+// Dodać spojny theme
