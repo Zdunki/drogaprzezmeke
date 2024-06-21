@@ -7,12 +7,22 @@ export default function Header() {
     <Box sx={{ flexGrow: 1 }}>
       <AppBar className="Header-AppBar" position="static">
         <Toolbar>
-          <Typography variant="h2" color="black" sx={{ flexGrow: 1 }}>
+          <Typography
+            fontFamily="Lucida Paragraph"
+            className="Header-TitleText"
+            variant="h2"
+            sx={{ flexGrow: 1 }}
+          >
             Food Finder
           </Typography>
         </Toolbar>
         <Toolbar>
-          <Typography variant="h3" color="white">
+          <Typography
+            fontFamily="Lucida Handwriting"
+            className="Header-SubTitleText"
+            variant="h4"
+            sx={{ flexGrow: 1 }}
+          >
             Find the best food on The Internets!!!
           </Typography>
         </Toolbar>

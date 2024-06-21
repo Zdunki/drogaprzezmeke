@@ -8,3 +8,11 @@
     );
     padding: 12px;
 }
+
+.Header-TitleText{
+    color: aquamarine;
+}
+
+.Header-SubTitleText{
+    color: black;
+}

@@ -10,6 +10,7 @@ export const SearchBar = ({ setRecipes }) => {
       `https://api.edamam.com/api/recipes/v2?type=public&q=${query}&app_id=42e498d3&app_key=50881bff153024d1ccde89dc7db27469`,
     );
     const resultData = await result.json();
+    console.log(resultData);
     setRecipes(resultData.hits);
   }
 
