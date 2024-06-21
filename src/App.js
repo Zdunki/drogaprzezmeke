@@ -11,10 +11,11 @@ export default function App() {
 
   return (
     <div className="App">
-      <Header />
-      <SearchBar setRecipes={setRecipes} />
-      <RecipesList recipes={recipes} />
-      <ThemeProvider theme={theme}></ThemeProvider>
+      <ThemeProvider theme={theme}>
+        <Header />
+        <SearchBar setRecipes={setRecipes} />
+        <RecipesList recipes={recipes} />
+      </ThemeProvider>
     </div>
   );
 }
